@@ -1,7 +1,7 @@
 # cut-the-deck
 
 ## Description
-We were tasked as a group to build full-stack application that works with real-world data to solve a real-world challenge.  The app we decided to create is called Cut The Deck.  A single-player card game app that features different single-player card games.
+We were tasked as a group to build a full-stack application that works with real-world data to solve a real-world challenge.  The app we decided to create is called Cut The Deck.  A single-player card game app that features different single-player card games.
 
 ## Table of Contents
 
