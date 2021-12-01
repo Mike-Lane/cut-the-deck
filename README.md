@@ -9,7 +9,8 @@ We were tasked as a group to build a full-stack application that works with real
 * [Technologies Used](#technologiesUsed)
 * [Links](#links)
 * [License](#lincense)
-* [Questions](#questions)
+* [Team Members](#teamMembers)
+
 
 ### Installation
 - Clone the repo to local machine
@@ -35,3 +36,9 @@ Live Deployed Application:
 
 ### License
 MIT
+
+### Team Members
+- Brynne Eastman: https://github.com/brynne-eastman
+- Mike Lane: https://github.com/Mike-Lane
+- Riley Lathan: https://github.com/rileylathan 
+- Randy Teekasingh: https://github.com/Rteekasingh
