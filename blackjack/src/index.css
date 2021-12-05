@@ -1,0 +1,54 @@
+html{
+    background-image: url(table-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 45px;
+    margin: 0;
+}
+
+div{
+    text-align: center;
+}
+button{
+    height: 75px;
+    width: 175px;
+    margin:  0 40px;
+    vertical-align: middle;
+    background-image: linear-gradient(140deg, lightgreen, white);
+    border: 0;
+    font-family: sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 50px;
+    color: black;
+    border-radius: 50px;
+    -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+div.button {
+-moz-box-shadow:    3px 3px 5px 6px gray;
+    -webkit-box-shadow: 3px 3px 5px 6px gray;
+    box-shadow:         3px 3px 5px 6px gray;
+    -moz-box-shadow:    inset 0 0 10px gray;
+    -webkit-box-shadow: inset 0 0 10px gray;
+    box-shadow:         inset 0 0 10px gray;
+}
+button:hover{
+    background-image: linear-gradient(140deg, lightgreen, white);
+}
+.cards{
+    justify-content: center;
+    display: flex;
+    width: auto;
+    margin: 15px auto;
+}
+.cards div{
+    margin-right: 15px;
+}

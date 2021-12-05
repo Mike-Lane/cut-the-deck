@@ -50,6 +50,16 @@ const App = () => {
                 console.log("Push")
                 setGameOver(true)
             }
+            // if(playerDeckValue > dealerDeckValue && (playerDeckValue > 10 && dealerDeckValue > 10)){
+            //     console.log("Player Wins");
+            //     setGameOver(true)
+            //     setWinner("Player")
+            // }
+            // else {
+            //     console.log("Dealer Wins")
+            //     setGameOver(true)
+            //     setWinner("Dealer")
+            // }
         }
         gameResult()
     })
@@ -70,7 +80,7 @@ const App = () => {
         setPlayerDeck(player_deck) 
     }
 
-    //reset back
+    //revert back
     const resetGame = () => {
         localStorage.clear()
         setGameOver(false)
@@ -104,7 +114,7 @@ const App = () => {
         }
     }
 
-    //check the value of player deck after each hit
+    //check the value of player deck after each hit.
     const playerDeckValue = async () => {
         let cardSum = 0;
         playerDeck.forEach(card => {
@@ -125,7 +135,7 @@ const App = () => {
         return cardSum
     }
 
-    //convert the card value from string to integer
+    //convert the card value from string to int.
     const getCardVal = card => {
         let card_val = card.value
         console.log(card_val)
@@ -149,7 +159,7 @@ const App = () => {
         if(isGameOver === true){
             return(
                 <div className="flex items-center justify-center">
-                    <p className="text-5xl font-bold">{winner} wins!</p>
+                    <p className="text-5xl font-bold">{winner} wins</p>
                 </div>
             )
         }
@@ -160,22 +170,23 @@ const App = () => {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold text-center mt-6">BlackJack</h1>
+            <h1>
+                <a href="/">
+                    <img src="blackjack-logo.png" alt="blackack game" width="550px" />
+                </a>
+            </h1>
             <br/>
             <div className="flex justify-center items-center">
                 <button 
                     onClick={dealGame} 
-                    className="border-2 px-3 py-1 text-md font-semibold rounded-lg border-gray-900">
+                    className="border-6 px-3 py-3 text-md font-semibold rounded-lg border-gray-500">
                         Deal
                 </button>
-                <button 
-                    onClick={playerHit}
-                    className="border-2 px-3 py-1 text-md font-semibold rounded-lg border-gray-900 ml-4"
-                >
+                <button onClick={playerHit} className="border-2 px-3 py-1 text-md p-4">
                         Hit Me
                 </button>
-                <button onClick={playerStands} className="border-2 px-3 py-1 text-md font-semibold rounded-lg border-gray-900 ml-4">Stand</button>
-                <button onClick={resetGame} className="border-2 px-3 py-1 text-md font-semibold rounded-lg border-gray-900 ml-4">Reset Game</button>
+                <button onClick={playerStands} className="border-6 px-4 py-4 text-md font-semibold rounded-lg border-gray-500 ml-6">Stand</button>
+                <button onClick={resetGame} className="border-6 px-4 py-4 text-md font-semibold rounded-lg border-gray-500 ml-6">Reset Game</button>
             </div>
             <div className="mt-3">
                 <GameOver isGameOver={gameOver} className="mt-4"/>
@@ -183,7 +194,8 @@ const App = () => {
             <br/><br/>
             <div className="flex justify-center items-center">
                 <h2 className="text-xl font-bold">Dealer: </h2>
-                <div className="flex m-4">
+                <div className="flex justify-center m-4">
+                    <div class="cards">
                     {
                         dealerDeck.map(card => {
                             return(
@@ -193,12 +205,14 @@ const App = () => {
                             )
                         })
                     }
+                    </div>
                 </div>
             </div>
             <br/>
             <div className="flex justify-center items-center">
                 <h2 className="text-xl font-bold">Player: </h2>
-                <div className="flex m-4">
+                <div className="flex content-end m-4">
+                    <div class="cards">
                     {
                         playerDeck.map(card => {
                             return(
@@ -208,6 +222,7 @@ const App = () => {
                             )
                         })
                     }
+                    </div>
                 </div>
             </div>
             <br/>   
