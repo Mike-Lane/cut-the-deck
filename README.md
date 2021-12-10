@@ -32,7 +32,7 @@ We were tasked as a group to build a full-stack application that works with real
 - Connect-Express-Sequelize
 
 ### Links
-Live Deployed Application: 
+Live Deployed Application: https://cut-the-deck.herokuapp.com/
 
 ### License
 MIT
